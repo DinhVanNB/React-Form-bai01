@@ -18,7 +18,7 @@ export const App=() =>{
   function handleValidate(){
     const errors = {};
     if(!form.name){
-      return errors.name="Bạn phải nhập tên liên hệ!!";
+       errors.name="Bạn phải nhập tên liên hệ!!";
     }
     else if(!regex.name.test(form.name)){
       errors.name = "Tên hợp lệ phải dài hơn 2 ký tự và ngắn hơn 20 ký tự!!"
